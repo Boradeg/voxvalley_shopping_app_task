@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".View.AddproductActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar"
+        android:backgroundTint="@android:color/transparent"
+        app:elevation="0dp"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="Add Product"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Title Of Product "
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginHorizontal="20dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                app:helperText="e.g Apple 13"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/prod_title"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="1"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Enter Title"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Description Of Product "
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginHorizontal="20dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                app:helperText="e.g Write Features"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/product_desc"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="1"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Enter Description"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Category Of Product "
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginHorizontal="20dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+
+                android:layout_marginTop="5dp"
+                app:helperText="e.g Mobile"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/product_category"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="1"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Enter Category"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Price Of Product "
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginHorizontal="20dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                app:helperText="e.g Rs.20000"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/product_price"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:gravity="top"
+                    android:minLines="1"
+                    android:maxLines="10"
+
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Enter Price"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SubmitBtn"
+                android:background="@drawable/purple_bg"
+                android:layout_margin="32dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Product" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
