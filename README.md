@@ -3,6 +3,7 @@
 
 ![1](https://github.com/Boradeg/voxvalley_shopping_app_task/assets/110608207/b23307ae-4853-4086-a431-2e00b2829047)
 - video link : https://youtu.be/svfJ-iWrBwI?feature=shared
+- apk link : https://drive.google.com/file/d/14AsbLaP85D4W4tfqEbtz7M0KZNZdK5OF/view?usp=drivesdk
 - This Android app implements a user-friendly shopping experience with functionalities like:
 
 - Data Fetching: Users seamlessly retrieve product data from a remote server API using the Ion library for asynchronous networking.
