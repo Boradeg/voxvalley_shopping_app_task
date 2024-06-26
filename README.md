@@ -1,5 +1,7 @@
 # Shopping App: Kotlin, Coroutines, MVVM, Ion, Remote Server API
 # Project Overview
+![1](https://github.com/Boradeg/voxvalley_shopping_app_task/assets/110608207/b23307ae-4853-4086-a431-2e00b2829047)
+
 
 This Android app implements a user-friendly shopping experience with functionalities like:
 
